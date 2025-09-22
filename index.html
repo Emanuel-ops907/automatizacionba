@@ -1,95 +1,136 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Automatización de portones, instalación y reparación de portones eléctricos en Gran Buenos Aires. Servicios profesionales de herrería y soldadura.">
-    <meta name="keywords" content="automización portones, reparación portones eléctricos, servicios de herrería, control remoto portones, GBA">
-    <meta name="author" content="Emanuel Soria Galvarro">
-    <meta name="google-site-verification" content="LrdlYK8VEzQ9nDpUl9q1gwBUCti7kOeQg482aVVehMY">
-    <title>Automatización de Portones en Gran Buenos Aires</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 15px;
-            text-align: center;
-        }
-        h1 {
-            font-size: 2.5em;
-        }
-        .container {
-            width: 80%;
-            margin: 20px auto;
-        }
-        .section {
-            background-color: #fff;
-            padding: 20px;
-            margin: 15px 0;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-        }
-        .button {
-            background-color: #25D366; /* WhatsApp Green */
-            color: white;
-            border: none;
-            padding: 15px 25px;
-            font-size: 16px;
-            cursor: pointer;
-            border-radius: 5px;
-            text-decoration: none;
-        }
-        .button:hover {
-            background-color: #128C7E;
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AZGO — Automatización de portones y herrería | Bobinados y reparación de cortinas metálicas</title>
+
+  <meta name="description" content="AZGO — Automatización de portones y herrería en general. Bobinados, cortinas PVC, reparación de cortinas metálicas. Más de 20 años de experiencia. Contacto: 1124711043 / 1124541980." />
+  <meta name="keywords" content="automatizacion portones, herreria, bobinados, cortinas PVC, reparación cortinas metálicas, AZGO" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://REEMPLAZAR_POR_TU_USUARIO.github.io/azgo/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="AZGO — Automatización de portones y herrería" />
+  <meta property="og:description" content="Bobinados, cortinas PVC, reparación cortinas metálicas. Más de 20 años de experiencia." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://REEMPLAZAR_POR_TU_USUARIO.github.io/azgo/" />
+  <meta property="og:image" content="https://REEMPLAZAR_POR_TU_USUARIO.github.io/azgo/og-image.jpg" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="AZGO — Automatización de portones y herrería" />
+  <meta name="twitter:description" content="Bobinados, cortinas PVC, reparación cortinas metálicas. Más de 20 años." />
+
+  <!-- Schema.org JSON-LD LocalBusiness (Google recomienda JSON-LD para businesses locales). Reemplaza dirección si quieres. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "AZGO",
+    "description": "Automatización de portones y herrería en general. Bobinados, cortinas PVC, reparación de cortinas metálicas. Más de 20 años de experiencia.",
+    "telephone": ["+541124711043", "+541124541980"],
+    "areaServed": "Buenos Aires, Argentina",
+    "url": "https://REEMPLAZAR_POR_TU_USUARIO.github.io/azgo/",
+    "service": [
+      {"@type":"Service","name":"Automatización de portones"},
+      {"@type":"Service","name":"Herrería en general"},
+      {"@type":"Service","name":"Bobinados"},
+      {"@type":"Service","name":"Cortinas PVC"},
+      {"@type":"Service","name":"Reparación de cortinas metálicas"}
+    ]
+  }
+  </script>
+
+  <style>
+    :root{--accent:#0f766e;--bg:#f7f7f8;--card:#ffffff;}
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,Arial,Helvetica,sans-serif;margin:0;background:var(--bg);color:#111}
+    header{background:linear-gradient(90deg,#0f766e, #065f46);color:#fff;padding:28px 18px;text-align:center}
+    header h1{margin:0;font-size:clamp(1.6rem,4vw,2.4rem);letter-spacing:0.6px}
+    header p{margin:8px 0 0;font-size:0.95rem;opacity:0.95}
+    main{max-width:1000px;margin:22px auto;padding:0 16px}
+    .hero{display:grid;grid-template-columns:1fr;gap:18px;align-items:center}
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,.06)}
+    .services ul{margin:8px 0 0;padding-left:20px}
+    .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:14px}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:10px;border:0;cursor:pointer;text-decoration:none}
+    .btn-call{background:#111;color:#fff}
+    .btn-wsp{background:var(--accent);color:#fff}
+    footer{margin:18px auto;text-align:center;color:#555;font-size:0.9rem;padding:18px}
+    /* WhatsApp floating button */
+    .wsp-fab{position:fixed;right:18px;bottom:18px;border-radius:999px;padding:12px 14px;background:#25D366;color:#fff;display:flex;align-items:center;gap:10px;box-shadow:0 10px 30px rgba(2,6,23,.18);z-index:999}
+    .wsp-fab svg{width:20px;height:20px}
+    @media(min-width:720px){ .hero{grid-template-columns:1fr 420px} }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Automatización de Portones en el Gran Buenos Aires</h1>
-        <p>Soluciones profesionales para portones corredizos, levadizos y más</p>
-    </header>
+  <header>
+    <h1>AZGO</h1>
+    <p>Automatización de portones • Herrería en general • Más de 20 años</p>
+  </header>
 
-    <div class="container">
-        <div class="section">
-            <h2>Servicios que ofrecemos</h2>
-            <ul>
-                <li><strong>Automatización de Portones Corredizos y Levadizos:</strong> Instalación de motores y automatización para portones de todo tipo, garantizando seguridad y comodidad.</li>
-                <li><strong>Instalación de Motores para Portones Eléctricos:</strong> Instalación profesional de motores para portones eléctricos, con tecnología de punta.</li>
-                <li><strong>Reparación Urgente de Portones:</strong> Servicio rápido y eficiente en toda el área del Gran Buenos Aires para reparaciones urgentes de portones.</li>
-                <li><strong>Fabricación de Estructuras Metálicas a Medida:</strong> Realizamos trabajos personalizados para estructuras metálicas de alta calidad.</li>
-                <li><strong>Instalación de Sistemas de Control Remoto:</strong> Instalamos sistemas de control remoto para facilitar el acceso a tu hogar o negocio.</li>
-                <li><strong>Servicios de Herrería Profesional:</strong> Realizamos trabajos de herrería y soldadura en general, brindando soluciones duraderas.</li>
-            </ul>
+  <main>
+    <section class="hero">
+      <div class="card">
+        <h2>Automatización de portones y servicios</h2>
+        <p>Realizamos instalación y reparación para portones automáticos, bobinados, cortinas PVC y reparación de cortinas metálicas. Atención profesional con más de 20 años de experiencia.</p>
+
+        <div class="services">
+          <h3>Servicios destacados</h3>
+          <ul>
+            <li>Automatización e instalación de motores para portones</li>
+            <li>Herrería en general (rejas, portones, estructuras)</li>
+            <li>Bobinados y reparación eléctrica de motores</li>
+            <li>Cortinas PVC a medida</li>
+            <li>Reparación y mantenimiento de cortinas metálicas</li>
+          </ul>
         </div>
 
-        <div class="section">
-            <h2>¿Por qué elegirnos?</h2>
-            <p>Contamos con más de 30 años de experiencia en la automatización de portones y la fabricación de estructuras metálicas. Nuestros servicios están avalados por la satisfacción de nuestros clientes, quienes nos han confiado la instalación, reparación y mantenimiento de sus sistemas durante tres décadas.</p>
+        <div class="cta">
+          <!-- tel: links: reemplaza +54 por el prefijo internacional correcto si corresponde -->
+          <a class="btn btn-call" href="tel:+541124711043" aria-label="Llamar a AZGO">📞 Llamar: 1124711043</a>
+
+          <!-- WhatsApp: wa.me requires number in international format sin signos -->
+          <a class="btn btn-wsp" href="https://wa.me/5491124711043?text=Hola%20AZGO!%20Quiero%20informaci%C3%B3n%20sobre%20automatizaci%C3%B3n%20de%20portones" target="_blank" rel="noopener" aria-label="Enviar WhatsApp a AZGO">💬 WhatsApp</a>
         </div>
 
-        <div class="section">
-            <h2>Contacto</h2>
-            <p>Para consultas, cotizaciones y más información, no dudes en ponerte en contacto con nosotros.</p>
-            <p>Teléfonos: <strong>1134352754</strong>, <strong>1124711043</strong></p>
-            <a href="https://wa.me/541134352754" class="button" target="_blank">Contáctanos por WhatsApp</a>
-        </div>
-    </div>
+        <p style="margin-top:12px;font-size:.95rem;color:#444">Números adicionales: 1124541980</p>
+      </div>
 
-    <footer>
-        <p>© 2025 Emanuel Soria Galvarro. Todos los derechos reservados.</p>
-    </footer>
+      <div class="card" aria-hidden="false">
+        <h3>¿Por qué elegir AZGO?</h3>
+        <ul>
+          <li>+20 años en el rubro</li>
+          <li>Repuestos originales y garantía en trabajos</li>
+          <li>Asistencia técnica y mantenimientos programados</li>
+        </ul>
+
+        <h3 style="margin-top:12px">Ubicación y horarios</h3>
+        <p>Atendemos en Buenos Aires y zona sur/norte con servicio a domicilio. Horario: L-V 9:00–18:00 (consultar). </p>
+      </div>
+    </section>
+
+    <section class="card" style="margin-top:18px">
+      <h3>Contacto rápido</h3>
+      <p>Enviar Whatsapp: <a href="https://wa.me/5491124711043" target="_blank" rel="noopener">1124711043</a> • Alternativo: <a href="https://wa.me/5491124541980" target="_blank" rel="noopener">1124541980</a></p>
+      <p style="font-size:.9rem;color:#666">Si tu número está en otro formato, edita los enlaces que comienzan con <code>https://wa.me/</code> dentro del archivo <code>index.html</code>.</p>
+    </section>
+
+  </main>
+
+  <footer>
+    © <span id="year"></span> AZGO — Automatización de portones y herrería — Tel: 1124711043 / 1124541980
+  </footer>
+
+  <!-- Floating WhatsApp button (visible siempre) -->
+  <a class="wsp-fab" href="https://wa.me/5491124711043?text=Hola%20AZGO!%20Necesito%20informaci%C3%B3n" target="_blank" rel="noopener" aria-label="WhatsApp AZGO">
+    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20.52 3.48A11.9 11.9 0 0012 0C5.37 0 .02 5.36 0 12c0 2 0.54 3.92 1.56 5.62L0 24l6.7-1.77A11.92 11.92 0 0012 24c6.63 0 11.99-5.36 12-12 0-. .01 0 0 0 0z" fill="white" opacity="0.0"></path><path d="M17.472 14.382c-.297-.149-1.76-.868-2.032-.966-.272-.099-.471-.149-.67.149-.198.297-.768.966-.94 1.165-.173.198-.345.223-.642.074-.297-.149-1.255-.462-2.39-1.476-.884-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.173.198-.297.298-.495.099-.198.05-.372-.025-.52-.074-.149-.67-1.614-.918-2.209-.242-.579-.487-.5-.67-.51l-.57-.01c-.198 0-.52.074-.793.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.064 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487 3.  0 3.  0 4 -. 0 0.0 0" fill="#fff"/></svg>
+    WhatsApp
+  </a>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
